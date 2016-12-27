@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+
+
+<!-- Begin tabs and tab data container -->
+<div class="container">
+	<h2>Dynamic Tabs</h2>
+	
+	<!-- Begin tab link list -->
+	<ul class="nav nav-tabs">
+		<li><a data-toggle="tab" href="#eventids">EventID's</a></li>
+	</ul>
+	<!-- End tab link list -->
+	
+	
+
+    
+
+	
+		<!-- Begin EventID tab data -->
+		<div id="eventids" class="tab-pane fade">
+			<!-- <h3>Event ID's</h3> -->
+			<br>
+			<p>	
+	  
+			
+			<!-- Begin collapsable pannel -->
+			<div class="panel-group" id="accordion">
+				
+				
+				<!-- Begin pannel for eventid summary -->
+				<div  class="panel-body">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Raw CSV Summary</a>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in">
+						<div class="panel-body">
+							Subset of the CSV raw data. Maybe a summary here??
+						</div>
+					</div>
+				</div>
+				<!-- End pannel for eventid summary -->
+				
+	
+				<!-- Begin pannel for event ID 4720 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse4720">
+						EventID 4720</a>
+						</h4>
+					</div>
+					<div id="collapse4720" class="panel-collapse collapse">
+						<div class="panel-body">
+							TABLE_DATA_FOR_EVENTID
+						</div>
+					</div>
+				</div>
+				<!-- End pannel for event ID 4720 -->				
+				
+			
+			</div>
+			<!-- End collapsable pannel -->
+		</div>
+		<!-- END EventID tab data -->
+ 
+  
+</div>
+<!-- End tabs and tab data container -->
+
+
+
+
+
+
+
+
+</body>
+</html>
+

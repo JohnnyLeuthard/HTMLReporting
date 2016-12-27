@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+	body {
+		background-color: yellow;
+
+	}
+	
+
+	
+	table {
+    	font-family: arial, sans-serif;
+    	border-collapse: collapse;
+    	width: 100%;
+	}
+
+	td, th {
+    	border: 1px solid #dddddd;
+    	text-align: left;
+	    padding: 8px;
+	}
+	
+	th {
+		background-color: lightblue;
+	}
+
+	tr:nth-child(even) {
+    	background-color: #dddddd;
+	}
+
+	#makegreen {
+		background-color: green;
+		color: white;
+	}
+</style>
+  <title>Bootstrap Tabs Testing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+<div class="container">
+  
+  <h2>Dynamic Pills</h2>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#eventids">EventID's</a></li>
+    <li><a data-toggle="pill" href="#summary">Summary</a></li>
+    <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+    <li><a data-toggle="pill" href="#table_tab">Table Tab</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>
+      	Main tab  
+    	</p>
+    </div>
+    
+    <div id="eventids" class="tab-pane fade">
+    <h3>Event ID's</h3>
+    <p>
+		PUT event ID's here
+      
+<!-- Collapsible Panel Begin  --> 
+	<div class="panel-group">
+		<div class="panel panel-default">
+    		<div class="panel-heading">
+      			<h4 class="panel-title">
+        		<a data-toggle="collapse" href="#collapse1">EVENTID's    Success: 1 /  Failures: 2</a>
+      			</h4>
+    		</div>
+    	<div id="collapse1" class="panel-collapse collapse">
+			<div class="panel-body">
+			
+			
+				<!-- Nested collapse begin  -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse2">EventID 4720</a>
+							</h4>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-footer">
+								<table> 
+									<colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup> 
+									<tr><th>Date</th><th>Time</th><th>Target Domain</th><th>Target ID</th><th>Source User Domain</th><th>Source User ID</th><th>Source User Name</th><th>Event ID</th><th>Event Description</th><th>Windows Event Type</th></tr> 
+										<tr><td> 09/28/2016</td><td>08:02:01</td><td>corptcf</td><td>batst</td><td>CORPTCF</td><td>svcerpmappprod</td><td>erpmappprod, svc</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>15:33:25</td><td>corptcf</td><td>froadmprd2</td><td>CORPTCF</td><td>svcerpmappprod</td><td>erpmappprod, svc</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>15:31:33</td><td>corptcf</td><td>froadmqa2</td><td>CORPTCF</td><td>svcerpmappprod</td><td>erpmappprod, svc</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>17:05:16</td><td>corptcf</td><td>t168036</td><td>CORPTCF</td><td>juddp</td><td>Judd, Paul</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>19:30:26</td><td>corptcf</td><td>t168102</td><td>CORPTCF</td><td>T166862</td><td>O&#39;Dell, Dallas H</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>16:41:58</td><td>corptcf</td><td>t164514</td><td>CORPTCF</td><td>T166598</td><td>Quach, Richard</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>16:41:58</td><td>corptcf</td><td>t164514</td><td>CORPTCF</td><td>T166598</td><td>Quach, Richard</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/28/2016</td><td>00:01:34</td><td>corptcf</td><td>t167627</td><td>CORPTCF</td><td>T166598</td><td>Quach, Richard</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/28/2016</td><td>00:01:34</td><td>corptcf</td><td>t167627</td><td>CORPTCF</td><td>T166598</td><td>Quach, Richard</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/28/2016</td><td>13:24:04</td><td>corptcf</td><td>jflowers</td><td>CORPTCF</td><td>STHAO1</td><td>Thao, Shoua</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>19:29:38</td><td>corptcf</td><td>t167206</td><td>CORPTCF</td><td>STHAO1</td><td>Thao, Shoua</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+										<tr><td> 09/27/2016</td><td>17:04:01</td><td>corptcf</td><td>t167947</td><td>CORPTCF</td><td>T167360</td><td>Thuriot, Sarah</td><td>4738</td><td>A user account was changed</td><td>Success Audit</td></tr> 
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Nested collapse end  -->
+			</div>
+			<div class="panel-footer">Event ID 4722</div>
+    		<div class="panel-footer">Event ID 4723</div>
+		</div>
+  	</div>
+	</div>
+<!-- Collapsible Panel End  --> 
+      
+      
+      
+      
+      
+    </p>
+    </div>
+    
+    <div id="summary" class="tab-pane fade">
+		<h3>Summary</h3>
+		<p>
+			<table id="summarytable2"> 
+				<colgroup><col/><col/></colgroup> 
+					<tr><th>Name</th><th>value</th></tr> 
+						<tr><td>Unauthorized Users</td><td>209</td></tr> 
+						<tr><td>Success Audit</td><td>1041</td></tr> 
+						<tr><td>Failure Audit</td><td>23</td></tr> 
+						<tr><td>Event ID: 4756</td><td>424</td></tr> 
+						<tr><td>Event ID: 4757</td><td>101</td></tr> 
+						<tr><td>Event ID: 4738</td><td>304</td></tr> 
+						<tr><td>Event ID: 4720</td><td>20</td></tr> 
+						<tr><td>Event ID: 4722</td><td>39</td></tr> 
+						<tr><td>Event ID: 4723</td><td>88</td></tr> 
+						<tr><td>Event ID: 4728</td><td>42</td></tr> 
+						<tr><td>Event ID: 4725</td><td>29</td></tr> 
+						<tr><td>Event ID: 4726</td><td>7</td></tr> 
+						<tr><td>Event ID: 4729</td><td>10</td></tr> 
+						<tr><td>oimcorp</td><td>308</td></tr> 
+						<tr><td>da.PUPM</td><td>9</td></tr> 
+						<tr><td>corpadmin</td><td>46</td></tr> 
+						<tr><td>pupmadmprod</td><td>1</td></tr> 
+						<tr><td>Computer Acounts - $</td><td>6</td></tr> 
+			</table>
+		</p>
+    </div>
+    
+	<div id="table_tab" class="tab-pane fade">
+      <h3>Table Tab</h3>
+      <p>
+      
+      <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+      
+      
+      
+      
+      
+      
+      
+      
+      </p>
+    </div>
+ </div>
+  
+</div>
+
+
+<hr>
+
+
+
+
+
+</body>
+<footer>
+<hr />
+	This is the footer
+</footer>
+</html>
